@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: solid 1px #c92c4e; */
+}
+.container{
+    background-color: #808080;
+    width: 950px; /*ancho*/
+    margin: 0 auto; /* centra horizontalmente dentro de un contenedor */
+    padding: 20px; /* estblece margen para el resto delos elementos*/
+}
+.top-nav{
+    width: 100%; /* Ancho total de la pagina*/
+    height: 150px;
+    background-color: #008000;
+}
+.main{
+    display: flex;
+    margin-top: 20px;
+}
+.left{
+    background-color: blue;
+    height: 300px;
+    flex: 1; /*ayuda a manipular mejor los elementos*/
+    margin-right: 10px;
+}
+.right{
+    background-color: red;
+    height: 400px;
+    flex: 3;
+    margin-left: 10px;
+    /* display: flex; */
+} 
+.row {
+    padding: 20px;
+    height: 200px;
+    display: flex; 
+    gap: 20px;
+
+}
+.yelow{
+    flex: 1;
+    background-color: yellow;
+}
+.row2{
+    margin: 0px 20px 20px;
+    background-color: purple;
+    height: 100px;
+}
+
+/* .yelow1{
+    background-color: yellow;
+    width: 100%;
+    height: 200px;
+    flex: 1;
+    margin: 10px;
+}
+.yelow2{
+    background-color: yellow;
+    width: 100%;
+    height: 200px;
+    flex: 1;
+    margin: 10px;
+}
+.yelow3{
+    background-color: yellow;
+    width: 100%;
+    height: 200px;
+    flex: 1;
+    margin: 10px;
+    margin-right: 40px;
+} */
+/* .purple{
+    background-color: purple;
+    width: 100%; 
+    height: 90px;
+    margin-top: 10px;
+    margin-right: 40px;
+}  */
