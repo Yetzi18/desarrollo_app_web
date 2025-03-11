@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: solid 1px #c92c4e; */
+}
+.container{
+    background-color: black;
+    width: 800px; 
+    height: 800px;
+    margin: 0 auto; 
+    padding: 20px; 
+}
+.main{
+    display: flex;
+}
+.blanco2{
+    background-color: white;
+    width: 100px;
+    height: 300px;
+    flex: 1;
+    margin-right: 30px;
+}
+
+.red{
+    background-color: red;
+    height: 600px;
+    flex: 3;
+}
+
