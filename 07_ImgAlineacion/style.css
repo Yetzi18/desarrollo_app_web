@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0 auto;
+    outline: solid 1px red;
+}
+.container{
+    background-color: rgb(214, 208, 208); 
+    width: 1000px;
+    height: 1750px;
+    margin: 0 auto;
+}
+.skyblue, .pink, .white, .yellow, .purple{
+    width: 900px;
+    height: 300px;
+    margin: 20px 20px 30px 50px;    
+}
+h1{
+    text-align: center;
+    color: rgb(46, 45, 45);
+    font-size: 50px;
+}
+.skyblue{
+    background-color: rgb(88,196,220);
+}
+.pink{
+    background-color: rgb(208,164,188);
+}
+.white{
+    background-color: white;
+}
+.yellow{
+    background-color: rgb(255, 255, 164);
+}
+.purple{
+    background-color: rgb(199, 0, 199);
+}
+.blue{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+}
