@@ -1,0 +1,85 @@
+*{
+    padding:0;
+    margin:0;
+    /*outline: solid 1px #c92c4e;*/
+}
+.container{
+    display: flex;
+}
+
+/*Cambios de la seccion izquierda*/
+.lef{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.imgMujer{
+    width: 200px;
+}
+.articles{
+    margin-top: 30px;
+}
+.f{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.a{
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+}
+span{
+    color: #f4bbb2;
+}
+
+/*Cambios de la seccion derecha/principal*/
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.arriba{
+    margin-bottom: 60px;
+}
+.pr{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.titel{
+    width: 70%;
+}
+/*Modificacion de la tipogarfia*/
+h1{
+    font-size: 50px;
+    font-family: Arial;
+}
+p{
+    font-family: Arial, Helvetica, cursive;
+    color: #636363;
+}
+/*Pocicionar el textoa un lado de la imagen*/
+.abajo{
+    display: flex;
+}
+/* .rightAbajo{
+
+} */
+.leftAbajo{
+    margin-left: 30px;
+    margin-right: 60px;
+} 
+.imgHombre{
+    width: 450px;
+}
+/*Modificacion de iconos*/
+.cosito{
+    width: 50px;
+    margin-top: 370px;
+}
+.acces{
+    width: 50px;
+    height: 50px;
+    margin-top: 520px;
+    margin-right: 10px;
+}
