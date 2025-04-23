@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: solid 1px #c92c4e;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*Navegador*/
+.nav-container{
+    background-color: #333333;
+    height: 75px;
+    border: solid 3px black;
+}
+.nav-items, .leftnav,.rightnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.right{
+    font-size: 30px;
+    padding: 20px;
+}
+.buttonnav{
+    cursor: pointer;
+    background-color: #17a2b8;
+    color: white;
+    height: 40px;
+    width: 150px;
+    font-size: 30px;
+    box-shadow: 4px 4px 0px 0px black ;
+    outline: 3px solid black;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    margin: 20px;
+}
+.contenidopag{
+    display: flex;
+}
+
+/*Tareja de user lef*/
+.above{
+    background-color: #42a3b9;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.below{
+    
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pb, .aa{
+    margin: 10px;
+    font-weight: bold;
+}
+.tarjeta{
+    width: 800px; 
+    height: 500px;
+}
+.aa{
+    color: #357ee5;
+}
+.user{
+    width: 200px;
+    height: 200px;
+    margin: 20px ;
+    border-radius: 50%;
+    border: solid 3px white;
+}
+.ubi, .confi{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+/*Solicitudes y conexiones*/
+.derecha{
+    background-color: #eceff1;
+    width: 30%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Dabove, .Dbelow{
+    background-color: white;
+    width: 90%;
+    border-radius: 5%;
+    margin: 0 auto;
+}
+.Dabove{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.botonsoli{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 200px;
+}
+.btn,.sino{
+    border: none;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.titel{
+    display: flex;
+    margin: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+.userimg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+p{
+    font-size: 20px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+h1{
+    flex: 2;
+}
+
+.botonVer{
+    cursor: pointer;
+    max-width: 100px;
+    background-color: white;
+    color: #55aee2;
+    border: solid 3px #55aee2;
+    border-radius: 10px;
+    font-size: 20px;
+    flex: 1;
+}
+
+
