@@ -4,11 +4,14 @@
     outline: solid 1px #c92c4e;
     font-family: 'Courier New', Courier, monospace;
 }
+body{
+    background-color: #edf0f2;
+}
 /*Navegador*/
 .nav-container{
-    background-color: #333333;
-    height: 75px;
-    border: solid 3px black;
+    background-color: #2c3e50;
+    width: 100%;
+    height: 80px;
 }
 .nav-items, .leftnav,.rightnav{
     display: flex;
@@ -16,30 +19,54 @@
     align-items: center;
     color: #fff;
 }
-.right{
+.leftnav,.rightnav{
+    margin-top: 20px;
+}
+/* .right{
     font-size: 30px;
     padding: 20px;
-}
+} */
 .buttonnav{
     cursor: pointer;
     background-color: #17a2b8;
     color: white;
     height: 40px;
     width: 150px;
-    font-size: 30px;
-    box-shadow: 4px 4px 0px 0px black ;
-    outline: 3px solid black;
+    font-size: 18px;
+    border-radius: 10%;
 }
 a{
     color: #fff;
     text-decoration: none;
     margin: 20px;
 }
+.pv{
+    font-size: 20px;
+}
+/*distribucion de la pagina*/
 .contenidopag{
     display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.izquierda{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+.derecha{
+    display: flex;
+    flex: 2;
+    justify-content: center;
 }
 
 /*Tareja de user lef*/
+.tarjeta{
+    width: 1000px;
+    height: 500px;
+    border-radius: 5%;
+    background-color: white;
+}
 .above{
     background-color: #42a3b9;
     width: 100%;
@@ -48,7 +75,6 @@ a{
     justify-content: center;
 }
 .below{
-    
     margin-top: 150px;
     display: flex;
     flex-direction: column;
@@ -57,11 +83,9 @@ a{
 .pb, .aa{
     margin: 10px;
     font-weight: bold;
+    text-align: center;
 }
-.tarjeta{
-    width: 800px; 
-    height: 500px;
-}
+
 .aa{
     color: #357ee5;
 }
@@ -78,16 +102,12 @@ a{
     margin-right: 10px;
 }
 
-
 /*Solicitudes y conexiones*/
-.derecha{
-    background-color: #eceff1;
-    width: 30%;
+.tarjetaSoli{
+    width: 95%;
     height: 650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
+
 .Dabove, .Dbelow{
     background-color: white;
     width: 90%;
@@ -127,7 +147,7 @@ a{
     margin-right: 10px;
     margin-left: 10px;
 }
-p{
+.ppp{
     font-size: 20px;
     margin: 20px;
     display: flex;
