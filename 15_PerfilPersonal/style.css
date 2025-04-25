@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: solid 1px #c92c4e;
+    font-family: cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: #f1959c;
+}
+/*Navegador*/
+.nav-container{
+    background-color: #8d2e34;
+    width: 100%;
+    height: 80px;
+}
+.nav-items, .leftnav,.rightnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.leftnav,.rightnav{
+    margin-top: 20px;
+}
+
+.buttonnav{
+    cursor: pointer;
+    background-color: #b36868;
+    color: white;
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    border-radius: 10%;
+    border: none;
+    margin-right: 20px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    margin: 20px;
+}
+.pv{
+    font-size: 20px;
+}
+/*distribucion de la pagina*/
+.contenidopag{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.izquierda{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+.derecha{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+}
+
+/*Tareja de user lef*/
+.tarjeta{
+    width: 1000px;
+    height: 500px;
+    border-radius: 5%;
+    background-color: white;
+    box-shadow: 5px 5px 15px 10px #ec7e7e; 
+}
+.above{
+    background-color: #b36868;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.below{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pb, .aa{
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #570710;
+}
+
+.aa{
+    color: #357ee5;
+}
+.user{
+    width: 200px;
+    height: 200px;
+    margin: 50px ;
+    border-radius: 50%;
+    border: solid 3px white;
+}
+.ubi, .confi{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/*Solicitudes y conexiones*/
+.tarjetaSoli{
+    width: 95%;
+    height: 650px;
+}
+
+.Dabove, .Dbelow{
+    background-color: white;
+    width: 90%;
+    border-radius: 5%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px 10px #ec7e7e; 
+}
+
+.botonsoli{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 350px;
+    margin-right: 10px;
+}
+.btn,.sino{
+    border: none;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.titel{
+    display: flex;
+    margin: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+.userimg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.ppp{
+    font-size: 20px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.titulo{
+    flex: 2;
+    color: #570710;
+}
+
+.botonVer{
+    cursor: pointer;
+    max-width: 100px;
+    background-color: white;
+    color: #b36868;
+    border: solid 3px #b36868;
+    border-radius: 10px;
+    font-size: 20px;
+    flex: 1;
+}
