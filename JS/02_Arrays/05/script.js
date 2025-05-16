@@ -5,6 +5,6 @@ console.log("Conexión Establecida correctamente con js!");
 function mensajeConcatenado(){
     let numero = [20, 50, 5, 3, 4];
     let suma = (numero[1]+numero[4]);
-    let mensaje = ("HOLA TÙ RESULTADO ES ESTE ");
+    let mensaje = ("HOLA TÙ RESULTADO ES ESTE: ");
     alert(mensaje + suma);
 }
