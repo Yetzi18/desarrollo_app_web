@@ -4,6 +4,9 @@
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
 }
+body{
+    background-color: rgb(201, 172, 172);
+}
 .container{
     width: 100%;
     height: 200px;
