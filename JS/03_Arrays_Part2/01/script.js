@@ -7,6 +7,6 @@ function  fraseCoherente(){
     let palabras =[
         ["Juan ", "corre ", "rápidamente ", "feliz ", "parque "],
         [ "en ", "el ", "por "] ];
-    let mensaje = (palabras[0][0] + palabras[0][1] + palabras[0][3] + palabras[0][2] + palabras[1][2] + palabras[0][4]);
+    let mensaje = (palabras[0][0] + palabras[0][1] + palabras[0][3] + palabras[0][2] + palabras[1][2] + palabras[1][1] + palabras[0][4]);
     alert("Frase coherente y completa: " + mensaje);
 }
