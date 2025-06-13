@@ -7,6 +7,8 @@ Si no, muestra "Acceso denegado". */
 function mayoriaEdad(){
     let edad = parseInt(prompt("Ingrese Edad: "));
     if(edad >= 18){
+        //document: me permite acceder al codigo html
+        //getElementById
         document.getElementById("resultado").innerHTML =`<p>Es mayor de Edad: ${edad} </p>`;
     }else if (edad <= 17 && edad >= 0){
         document.getElementById("resultado").innerHTML =`<p>Es menor de Edad: ${edad} </p>`;
@@ -101,15 +103,16 @@ Declara la variable nota con un valor entre 1 y 7.
 Si nota >= 6: muestra "Excelente".
 Si nota >= 4: muestra "Aprobado".
 Si nota < 4: muestra "Reprobado". */
-
+// > mayor que
+// < menor que
 function calificacion(){
     let nota = parseInt(prompt("Ingrese la nota: "));
-    if (nota >= 6) {
+    if (nota >= 6 && nota <= 7) {
         document.getElementById("resultado").innerHTML = `<p>Excelente: ${nota}.</p>`;
         console.log("Excelente");
-    } else if (nota >= 4) {
+    } else if (nota >= 4 && nota <= 6)  {
         document.getElementById("resultado").innerHTML = `<p>Aprobado: ${nota}.</p>`;
-    } else if (nota < 4) {
+    } else if (nota < 4 && nota >= 1) {
         document.getElementById("resultado").innerHTML = `<p>Reprobado: ${nota}.</p>`;
     } else {
         document.getElementById("resultado").innerHTML =`<p>El valor <strong>${nota}</strong> es invalido.</p>`;
@@ -173,10 +176,13 @@ function listaInvitados(){
     /*if (invitados[0] || invitados[1] || invitados[2] ){*/
     if (invitados.includes(persona)){  
         document.getElementById("resultado").innerHTML = `<p>Bienvenido, ${persona} </p>`;
-    }else {
+    }
+    else if (!invitados.includes(persona)){
         document.getElementById("resultado").innerHTML = `<p>No estás en la lista: ${persona} .</p>`;
     }
-
+    else{
+        document.getElementById("resultado").innerHTML =`<p>Error valor Invalido</p>`;
+    }
 }
 
 
