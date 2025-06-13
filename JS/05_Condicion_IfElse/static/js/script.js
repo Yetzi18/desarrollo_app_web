@@ -56,7 +56,7 @@ function tareasWeb(){
     if (tareas.length >= 5) {
         tareas.pop()
         document.getElementById("resultado").innerHTML =`<p>Lista modificada: <strong>${tareas.join(" - ")}</strong> .</p>`;
-    } else (tareas.length <= 5);{
+    } else {
         document.getElementById("resultado").innerHTML =`<p>Lista aceptable: <strong>${tareas.join(" - ")}</strong> .</p>`;
 
     }
@@ -73,9 +73,9 @@ Si no, muestra "Cola correcta". */
 function validarElemnto() {
     let cola = ["sinNombre", "Pedro", "Lucía"];
     if (cola[0] == "sinNombre"){
-        cola.shift()
+        cola.shift();
         document.getElementById("resultado").innerHTML = `<p>Nuevo Arreglo: <strong>${cola.join(" - ")}</strong> .</p>`;
-    } else (cola[0] != "sinNombre");{
+    } else {
         document.getElementById("resultado").innerHTML = `<p>Cola correcta: <strong>${cola.join(" - ")}</strong> .</p>`;
     }
 }
@@ -89,7 +89,7 @@ function saludo() {
     let nombre = prompt("Ingrese su nombre: ");
     let saludos = ["Hola "];
     if (nombre != ""){
-        saludos.push(nombre)
+        saludos.push(nombre);
         document.getElementById("resultado").innerHTML = `<p>Saludo: ${saludos.join(" , ")}.</p>`;
     } else{
         document.getElementById("resultado").innerHTML = `<p>Nombre no válido</p>`;
@@ -124,7 +124,79 @@ Si está vacío, muestra "Error: nombre vacío". */
 
 function registroVisitantes(){
     let visitas = [];
-    let persona 
+    let nombre = prompt("Ingrese su nombre: ");
+    if (nombre != ""){
+        visitas.unshift(nombre)
+        document.getElementById("resultado").innerHTML = `<p>Visita: ${visitas.join(" : ")}.</p>`;
+    } else {
+        document.getElementById("resultado").innerHTML =`<p>Erro: nombre vacío</p>`;
+    }
+
+}
+
+/*Ejercicio 8: Control de stock
+js
+let stock = ["arroz", "fideos"];
+
+Declara la variable productoSolicitado.
+Si stock incluye el producto, muestra "Producto disponible".
+Si no, agrégalo con push() y muestra "Producto agregado al stock". */
+
+function controlStock(){
+    let stock = ["arroz", "fideos"];
+    let productoSolicitado = prompt("Ingrese el producto que solicita");
+    if (stock[0] == productoSolicitado){
+        document.getElementById("resultado").innerHTML =`<p>Producto disponible: <strong>${productoSolicitado}</strong>.</p>`;
+
+    } else if(stock[1] == productoSolicitado){
+        document.getElementById("resultado").innerHTML =`<p>Producto disponible: <strong>${productoSolicitado}</strong>.</p>`;
+
+    } else{
+        stock.push(productoSolicitado);
+        document.getElementById("resultado").innerHTML = `<p>Producto agregado al stock: <strong>${stock.join(" - ")}</strong>.</p>`;
+    }
+}
+
+/*Ejercicio 9: Lista de invitados
+js
+let invitados = ["Ana", "Luis", "Camila"];
+
+Declara la variable persona.
+Si la persona está en el arreglo, muestra "Bienvenido, [nombre]".
+Si no, muestra "No estás en la lista".
+ */
+
+function listaInvitados(){
+    let invitados = ["Ana", "Luis", "Camila"];
+    let persona = prompt("Ingrese su nombre: ");
+
+    /*if (invitados[0] || invitados[1] || invitados[2] ){*/
+    if (invitados.includes(persona)){  
+        document.getElementById("resultado").innerHTML = `<p>Bienvenido, ${persona} </p>`;
+    }else {
+        document.getElementById("resultado").innerHTML = `<p>No estás en la lista: ${persona} .</p>`;
+    }
+
+}
 
 
+/*Ejercicio 10: Evaluar rol de usuario
+js
+let usuarios = ["Admin", "Editor", "Invitado"];
+Declara la variable rol.
+Si rol === "Admin", agrégalo al inicio con unshift() y muestra "Rol prioritario agregado".
+Si es otro rol, usa push() y muestra "Rol agregado". */
+
+function eveluarUser(){
+    let usuarios = ["Admin", "Editor", "Invitado"];
+    let rol = prompt("Ingrese su rol (Admin, Editor, Invitado): "); 
+
+    if (rol === usuarios[0]){
+        usuarios.unshift(rol);
+        document.getElementById("resultado").innerHTML = `<p>Rol prioritario agregado  ${usuarios.join(" - ")}.</p>`;
+
+    } else {
+        usuarios.push(rol);
+        document.getElementById("resultado").innerHTML = `<p>Rol agregado ${usuarios.join(" - ")}</p>`;
+    }
 }
