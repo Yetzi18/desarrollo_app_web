@@ -45,9 +45,9 @@ function contadorCondicional(){
     let n = parseInt(prompt("Ingresa un núemro : ")); 
     while (i <= n){
         if (n <= 0){
-            document.getElementById("resultado").innerHTML =`<p>Erro: nombre vacío</p>`;
+            document.getElementById("resultado").innerHTML =`<p><strong>Erro: Número no válido</strong></p>`;
         }else 
-
+            
         i++;
     }
 }
