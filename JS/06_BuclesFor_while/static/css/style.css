@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: rgb(182, 145, 121);
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    color: white;
+    background-color: rgb(109, 24, 24);
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: rgb(179, 81, 81);
+    border-radius: 10px;
+    border: none;
+    border: 2px solid rgb(110, 5, 5);
+    box-shadow: 0 0 10px rgb(110, 5, 5);
+    transition: box-shadow 0.6s ease;
+    box-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(255, 0, 0);
+} 
+p, h1{
+    color: black;
+    text-align: center;
+}
+h1{
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+    letter-spacing: 5px;
+}
+/* .btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid rgb(110, 5, 5);
+    box-shadow: 0 0 10px rgb(110, 5, 5), 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(255, 0, 0);
+    transition: box-shadow 0.0005s ease;
+    animation: girar 0.005s linear infinite, rgbcolor 3s linear infinite;
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rgbcolor {
+    0% {
+        background-color: rgb(255, 0, 0);
+    }
+    33% {
+        background-color: rgb(0, 255, 0);
+    }
+    66% {
+        background-color: rgb(0, 0, 255);
+    }
+    100% {
+        background-color: rgb(255, 0, 0);
+    }
+} */
+

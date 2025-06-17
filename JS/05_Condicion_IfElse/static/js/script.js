@@ -128,6 +128,7 @@ Si está vacío, muestra "Error: nombre vacío". */
 function registroVisitantes(){
     let visitas = [];
     let nombre = prompt("Ingrese su nombre: ");
+    
     if (nombre != ""){
         visitas.unshift(nombre)
         document.getElementById("resultado").innerHTML = `<p>Visita: ${visitas.join(" : ")}.</p>`;
