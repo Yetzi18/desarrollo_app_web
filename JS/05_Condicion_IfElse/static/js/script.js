@@ -8,7 +8,8 @@ function mayoriaEdad(){
     let edad = parseInt(prompt("Ingrese Edad: "));
     if(edad >= 18){
         //document: me permite acceder al codigo html
-        //getElementById
+        //getElementById: tomar un elemento desde el id 
+        //innerHTML: inserta un elemento html dentro del id
         document.getElementById("resultado").innerHTML =`<p>Es mayor de Edad: ${edad} </p>`;
     }else if (edad <= 17 && edad >= 0){
         document.getElementById("resultado").innerHTML =`<p>Es menor de Edad: ${edad} </p>`;
