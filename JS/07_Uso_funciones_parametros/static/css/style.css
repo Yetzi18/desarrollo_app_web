@@ -4,6 +4,8 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+
+
 body{
     background-color: rgb(192, 183, 196);
 }
@@ -54,5 +56,27 @@ h1{
     padding-left: 20px;
 
 }
+
+.cubos{
+    width: 20%;
+    border-radius: 10%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px 10px rgb(207, 206, 206); 
+    align-items: center;
+}
+
+.pp, .input, .btn{
+    margin: 20px;
+    width: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input{
+    width: 70%;
+}
+
 
 
