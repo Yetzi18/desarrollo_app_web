@@ -1,7 +1,7 @@
 # Uso de funciones con parametros 
 
-** Funciones, parametros return
+** Funciones, parametros, return,for, if, input y document
 
-## oki (subtitulo)
+## Ejercio 2 partica para la prueba de js 
 
 Autor: yetzibelgonzalez@liceovvh.cl 
