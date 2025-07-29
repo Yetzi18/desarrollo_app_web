@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+body{
+    background-color: rgb(192, 183, 196);
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    background-color: rgb(66, 16, 82);
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: rgb(171, 81, 179);
+    border-radius: 10px;
+    border: none;
+    border: 2px solid rgb(110, 5, 101);
+    box-shadow: 0 0 10px rgb(110, 5, 101);
+    transition: box-shadow 0.6s ease;
+    box-shadow: 0 0 10px rgb(195, 0, 255), 0 0 20px rgb(195, 0, 255);
+} 
+p, h1{
+    color: black;
+    text-align: center;
+}
+h1{
+    text-shadow: 0 0 10px rgb(195, 0, 255);
+    letter-spacing: 5px;
+}
+.input{
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(110, 5, 101);
+    box-shadow: 0 0 10px rgb(110, 5, 101);
+    transition: box-shadow 0.6s ease;
+    box-shadow: 0 0 10px rgb(195, 0, 255), 0 0 20px rgb(195, 0, 255);
+    margin-bottom: 20px;
+    padding-left: 20px;
+
+}
+
+.cubos{
+    width: 20%;
+    border-radius: 10%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px 10px rgb(207, 206, 206); 
+    align-items: center;
+}
+
+.pp, .input, .btn{
+    margin: 20px;
+    width: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input{
+    width: 70%;
+}
+
+
+
