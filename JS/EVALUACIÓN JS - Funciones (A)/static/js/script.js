@@ -11,25 +11,25 @@ Ejemplo esperado:
 Si el usuario ingresa 10, el resultado debe ser:
 1, 3, 5, 7, 9 */
 
-
-function filtrarImpares(limite){
+// Creación de funcion par guardar numeros impares en una lista y mostrarlos 
+function filtrarImpares(limite){ // función recibe parametro limite 
     let listaimpar = [];
     for(let i = 1; i <=  limite; i++){
-        if (i % 2 !== 0)
+        if (i % 2 !== 0) //condición para guardar los numeros impares en la lista 
         {
             listaimpar.push(i);
-        } 
-        console.log("Los numeros impares dentro de: " + limite + " son: " + listaimpar);    
+        }     
     }
-    alert("Numeros impapres:" + listaimpar); 
-    return listaimpar;
+    console.log("Los numeros impares dentro de: " + limite + " son: " + listaimpar);//mostrar resultados en la consola 
+    alert("Busqueda de numeros impares exixtosa. Preciona aceptar para ver.");
+    return listaimpar; //retornar el contenido de la lista 
 }
 
 function mostrarImpares(){
     let numeroLimite = document.getElementById("input1").value;
-    // let nuemroMultiplo = document.getElementById("input2").value;
-    let resultadoFinal = filtrarImpares(numeroLimite);
     
+    let resultadoF = filtrarImpares(numeroLimite); //llama la funcion filtrarImpares y le entrega un valor como parametro 
+    document.getElementById("resultado").innerHTML= `<p>Los numeros impares son: ${resultadoF}</p>`;
 }
 
 
