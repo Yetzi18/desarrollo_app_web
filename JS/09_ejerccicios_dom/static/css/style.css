@@ -37,8 +37,12 @@ body{
     
 }
 
-h1, p{
+.sec_texto{
     margin-bottom: 10px;
+}
+
+.titulo{
+    margin-left: 300px;
 }
 
 .btn{
