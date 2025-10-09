@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: solid 1px #c92c4e;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    /* flex-direction: column; */
+}
