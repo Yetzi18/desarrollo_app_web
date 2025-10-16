@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <div class="cotainer">
+        <form class="formulario" id="formularios">
+            <div class="formulario">
+                <label from="nombreEstudiante">Nombre del Estudiante</label>
+                <input type="text" class="input" id="inputNombre" name="nombre" required>
+            </div>
+            <div class="formulario">
+                <label from="edadE">Edad del Estudiante</label>
+                <input type="number" class="input" id="inputEdad" name="edad" min="14" max="100" required> 
+            </div>
+            <div class="formulario">
+                <label from="curso">Curso</label>
+                <select id="curso" name="curso" required>
+                    <option value="1">1° Medio</option>
+                    <option value="2">2° Medio</option>
+                    <option value="3">3° Medio</option>
+                    <option value="4">4° Medio</option>
+                </select>
+            </div>
+            <div class="formulario">
+                <label from="jornada">Jornada</label>
+                <div class="radio" id="radio">
+                    <div class="radio-option">
+                        <input type="radio" class="input" id="morning" name="jornada" value="Mañana" required>
+                        <label for="mornign">Mañana</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" class="input" id="tarde" name="jornada" value="Tarde" required>
+                        <label for="tarde">Tarde</label>
+                    </div>
+                </div>
+            </div>
+            <div class="formulario">
+                <div class="checkbox-group">
+                    <input type="checkbox" class="input" id="reglamento" name="reglamento" required>
+                    <label from="reglamento">Acepto las condiciones de uso</label>
+                </div>
+            </div>
+            <button type="submit">Registrar</button>
+            <button type="button" id="limpiarBtn" class="btn-clear">Limpiar</button>
+            
+        </form>
+        <a href="../index.html" class="back-link">Volver al inicio</a>
+    </div>
+    <script src="static/js/script_sec1.js"></script>
+</body>
+</html>
