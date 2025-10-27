@@ -3,21 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio this</title>
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
-    <div class="nav-container">
-        <div class="nav-items">
-            <div class="lefnav">
-                <div class="Profile"><h1><a href="#">Perfil</a></h1></div>
+    
+    <div class="container">
+        <nav class="bar">
+            <h1 class="text-dojo">Dojonary</h1>
+            <input class="input-search" type="text" placeholder="Search">
+            <button class="btn-log" id="login-btn" onclick="login(this)">Login</button>
+        </nav>
+
+        <div class="bodyco">
+            <div class="pt1">
+                <div class="ninja1">
+                    <div class="izq1">
+                        <div class="izq-texts">
+                            <h1 class="text-ninja">ninja</h1>
+                            <p class="text-ninja2">noun</p>
+                            <p class="text-ninja2">Plural: ninjas</p>
+                        </div>
+                        <div class="btn-likes">
+                            <button class="likes-btn tooltip" onclick="like(this)">
+                                <span class="like-btn" id="btn-lik">13</span> likes
+                                <span class="tooltip-text">Like this definition</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="der1">
+                        <h4>A practitioner skilled in the <a class="text-a" href="#">Japanese</a> art of <a class="text-a" href="#">ninjutsu</a></h4>
+                    </div>
+                </div>
+                
+                <div class="ninja2">
+                    <div class="izq2">
+                        <div class="izq2-text">
+                            <h1 class="text-ninja">ninja</h1>
+                            <p class="text-ninja2">noun</p>
+                            <p class="text-ninja2">Plural: ninjas</p>
+                        </div>
+                        <div class="btn-likes">
+                            <button class="likes-btn tooltip" onclick="like(this)">
+                                <span class="like-btn" id="btn-lik2">37</span> likes
+                                <span class="tooltip-text">Like this definition</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="der2">
+                        <h4>A <a class="text-a" href="#">programmer</a> who breaks down problems with <a class="text-a" href="#">zen</a>-like focus</h4>
+                    </div>
+                </div>
             </div>
-            <div class="rightnav">
-                <div><p class="pv"><a href="#">Inicio</a></p></div>
-                <div><p class="pv"><a href="#">Mi perfil</a></p></div>
-                <div><p class="pv"><a href="#">Conexiones</a></p></div>
-                <button class="buttonnav">Cerrar sesión</button>
+            
+            <div class="pt2">
+                <h2 class="pt2-text">Dojonary is defined by <span class="you-text">YOU</span></h2>
+                <button class="btn-pt2" id="add-def-btn" onclick="btnBorrar(this)">Add Definition</button>
             </div>
         </div>
     </div>
+
+    <script src="./static/js/main.js"></script>
 </body>
 </html>
