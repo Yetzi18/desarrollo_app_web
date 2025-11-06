@@ -15,10 +15,11 @@
     <div class="container">
         <div class="nav">
             <h1 class="title">DojoWeather</h1>
-            <p>Burbank</p>
-            <p>Chicago</p>
-            <p>Dallas</p>
+            <p onclick="cargarReporte('Burbank')">Burbank</p>
+            <p onclick="cargarReporte('Chicago')">Chicago</p>
+            <p onclick="cargarReporte('Dallas')">Dallas</p>
         </div>
+        
         <div class="containerTiempo">
             <div class="navegadorMini">
                 <h1 class="titulo">San Jose</h1>
@@ -34,7 +35,7 @@
                 <!-- Tarjeta 1: Se reemplaza "today" por "tarjeta-clima" -->
                 <div class="tarjeta-clima">
                     <h3>Today</h3>
-                    <img src="static/some_rain.png" alt="Lluvia">
+                    <img src="static/assets/some_rain.png" alt="Lluvia">
                     <p class="descripcion">some rain</p>
                     <!-- Se agrupan las temperaturas -->
                     <div class="temperaturas">
@@ -46,7 +47,7 @@
                 <!-- Tarjeta 2: Se reemplaza "tomorrow" por "tarjeta-clima" -->
                 <div class="tarjeta-clima">
                     <h3>Tomorrow</h3>
-                    <img src="static/some_sun.png" alt="Sol">
+                    <img src="static/assets/some_sun.png" alt="Sol">
                     <p class="descripcion">some sun</p>
                     <div class="temperaturas">
                         <span class="maxima">27°</span>
@@ -57,7 +58,7 @@
                 <!-- Tarjeta 3: Se reemplaza "friday" por "tarjeta-clima" -->
                 <div class="tarjeta-clima">
                     <h3>Friday</h3>
-                    <img src="static/some_clouds.png" alt="Nubes">
+                    <img src="static/assets/some_clouds.png" alt="Nubes">
                     <p class="descripcion">some clouds</p>
                     <div class="temperaturas">
                         <span class="maxima">21°</span>
@@ -68,7 +69,7 @@
                 <!-- Tarjeta 4: Se reemplaza "saturday" por "tarjeta-clima" -->
                 <div class="tarjeta-clima">
                     <h3>Saturday</h3>
-                    <img src="static/some_sun.png" alt="Sol">
+                    <img src="static/assets/some_sun.png" alt="Sol">
                     <p class="descripcion">some sun</p>
                     <div class="temperaturas">
                         <span class="maxima">26°</span>
@@ -80,7 +81,7 @@
         </div>
 
         <div class="banner-galletas" id="banner-galletas">
-            <img src="static/cookie.png" alt="Cookie Icon">
+            <img src="static/assets/cookie.png" alt="Cookie Icon">
             <div class="texto">
                 <h4>Stop! Cookie time</h4>
                 <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
