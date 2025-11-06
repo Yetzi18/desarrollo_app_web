@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Tecnológica</title>
+    <link rel="stylesheet" href="/JS/09_ejerccicios_DOM/static/css/style_sec4.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Volver al inicio</a>
+        <h1>Encuesta de Preferencias Tecnológicas</h1>
+
+        <form id="encuestaForm">
+            <div class="form-section">
+                <h3>1. Lenguajes de Programación Favoritos *</h3>
+                <p>Selecciona todos los que te gusten:</p>
+                <div class="checkbox-grid">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="js" name="lenguajes" value="JavaScript">
+                        <label for="js">JavaScript</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="python" name="lenguajes" value="Python">
+                        <label for="python">Python</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="java" name="lenguajes" value="Java">
+                        <label for="java">Java</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="csharp" name="lenguajes" value="C#">
+                        <label for="csharp">C#</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="cpp" name="lenguajes" value="C++">
+                        <label for="cpp">C++</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="php" name="lenguajes" value="PHP">
+                        <label for="php">PHP</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="go" name="lenguajes" value="Go">
+                        <label for="go">Go</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="rust" name="lenguajes" value="Rust">
+                        <label for="rust">Rust</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>2. Nivel de Experiencia *</h3>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="inicial" name="experiencia" value="Inicial" required>
+                        <label for="inicial">Inicial</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="intermedio" name="experiencia" value="Intermedio" required>
+                        <label for="intermedio">Intermedio</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="avanzado" name="experiencia" value="Avanzado" required>
+                        <label for="avanzado">Avanzado</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>3. Canales de Aprendizaje *</h3>
+                <label for="canales">Mantén Ctrl presionado para seleccionar múltiples:</label>
+                <select name="canales" id="canales" multiple required>
+                    <option value="Documentación">Documentación</option>
+                    <option value="Cursos en línea">Cursos en línea</option>
+                    <option value="Foros">Foros</option>
+                    <option value="Videos">Videos</option>
+                    <option value="Blogs">Blogs</option>
+                    <option value="Libros">Libros</option>
+                    <option value="Tutoriales">Tutoriales</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <h3>4. Comentarios</h3>
+                <label for="comentarios">Cuéntanos más (opcional):</label>
+                <textarea id="comentarios" maxlength="200" placeholder="Escribe aquí..."></textarea>
+                <div class="char-counter" id="charCounter">0 / 200</div>
+            </div>
+
+            <button type="submit">Enviar Encuesta</button>
+            <button type="button" id="limpiarBtn" class="btn-clear">Limpiar</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="/JS/09_ejerccicios_DOM/static/js/script_sec4.js"></script>
+</body>
+</html>

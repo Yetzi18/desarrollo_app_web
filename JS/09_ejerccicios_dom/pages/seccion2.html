@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Promedio</title>
+    <link rel="stylesheet" href="/JS/09_ejerccicios_DOM/static/css/style_sec2.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Volver al inicio</a>
+        <h1>Calculadora de Promedio</h1>
+
+        <div class="form-group">
+            <label for="nota">Nota (1.0 - 7.0):</label>
+            <input type="number" id="nota" step="0.1" min="1.0" max="7.0" placeholder="Ej: 5.5">
+        </div>
+
+        <button id="agregarBtn">Agregar Nota</button>
+        <button id="calcularBtn">Calcular Promedio</button>
+        <button id="eliminarBtn" class="btn-danger">Eliminar Última</button>
+        <button id="limpiarBtn" class="btn-secondary">Limpiar Todo</button>
+
+        <div id="notasContainer" style="display: none;" class="notas-container">
+            <h3>Notas ingresadas:</h3>
+            <div id="notasDisplay"></div>
+            <div class="stats">
+                <div>Total: <span id="totalNotas">0</span></div>
+                <div>Mayor: <span id="notaMayor">-</span></div>
+                <div>Menor: <span id="notaMenor">-</span></div>
+            </div>
+        </div>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="/JS/09_ejerccicios_DOM/static/js/script_sec2.js"></script>
+</body>
+</html>

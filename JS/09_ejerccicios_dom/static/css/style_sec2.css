@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="number"] {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.btn-secondary {
+    background: #999;
+}
+
+.btn-secondary:hover {
+    background: #777;
+}
+
+.btn-danger {
+    background: #d9534f;
+}
+
+.btn-danger:hover {
+    background: #c9302c;
+}
+
+.notas-container {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 3px;
+}
+
+.notas-container h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.nota-item {
+    display: inline-block;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.resultado {
+    background: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.resultado.reprobado {
+    background: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+.error {
+    background: #f2dede;
+    border: 1px solid #ebccd1;
+    color: #a94442;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.stats {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}

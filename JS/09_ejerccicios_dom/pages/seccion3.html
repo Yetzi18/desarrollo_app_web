@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="/JS/09_ejerccicios_DOM/static/css/style_sec3.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Volver al inicio</a>
+        <h1>Gestor de Tareas</h1>
+
+        <form id="tareaForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="descripcion">Descripción *</label>
+                    <input type="text" id="descripcion" required minlength="3" placeholder="Ej: Estudiar matemáticas">
+                </div>
+                
+                <div class="form-group">
+                    <label for="fecha">Fecha límite *</label>
+                    <input type="date" id="fecha" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="prioridad">Prioridad *</label>
+                    <select id="prioridad" required>
+                        <option value="">Seleccionar</option>
+                        <option value="Alta">Alta</option>
+                        <option value="Media">Media</option>
+                        <option value="Baja">Baja</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="filtroAlta">
+                <label for="filtroAlta">Mostrar solo tareas de prioridad Alta</label>
+            </div>
+
+            <button type="submit">Agregar Tarea</button>
+            <button type="button" id="ordenarFecha" class="btn-secondary">Ordenar por Fecha</button>
+            <button type="button" id="ordenarPrioridad" class="btn-secondary">Ordenar por Prioridad</button>
+            <button type="button" id="limpiarBtn" class="btn-secondary">Limpiar Todo</button>
+        </form>
+
+        <div id="error"></div>
+
+        <div class="tareas-section">
+            <h3>Lista de Tareas</h3>
+            <div id="tareasLista"></div>
+        </div>
+    </div>
+
+    <script src="/JS/09_ejerccicios_DOM/static/js/script_sec3.js"></script>
+</body>
+</html>

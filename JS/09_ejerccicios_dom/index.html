@@ -1,44 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad DOM</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <title>Ejercicios</title>
+    <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
     <div class="container">
-        <div class="titulo">
-            <h1>SELECCIONE UN EJERCICIO</h1>
-        </div>
-        <div class="sec1_2">
-            <section class="sec" id="sec1">
-                <h1 class="sec_texto">Registro de Estudiante.</h1>
-                <p class="sec_texto">Capturar datos de un estudiante, validarlos y generar un resumen en el documento.</p>
-                <button class="btn" onclick="ir_seccion('seccion1')">Ir</button>
-            </section>
-
-            <section class="sec" id="sec2">
-                <h1 class="sec_texto">Calculadora de Promedio de Notas.</h1>
-                <p class="sec_texto">Ingresar múltiples notas (1.0–7.0), almacenarlas en un arreglo, calcular promedio y determinar aprobación.</p>
-                <button class="btn" onclick="ir_seccion('seccion2')">Ir</button>
-            </section>
-        </div>
+        <h1>Ejercicios de Programación</h1>
         
-        <div class="sec3_4">
-            <section class="sec" id="sec3">
-                <h1 class="sec_texto">Gestor de Tareas con Prioridades y Fecha.</h1>
-                <p class="sec_texto"> Crear una lista de tareas usando arreglos y renderizado dinámico en el DOM.</p>
-                <button class="btn" onclick="ir_seccion('seccion3')">Ir</button>
-            </section>
+        <ul class="exercise-list">
+            <li class="exercise-item" onclick="window.location.href='./pages/seccion1.html'">
+                <div class="exercise-title">Ejercicio 1 - Registro de Estudiante</div>
+                <div class="exercise-description">
+                    Formulario para registrar estudiantes con validaciones y resúmenes.
+                </div>
+            </li>
 
-            <section class="sec" id="sec4">
-                <h1 class="sec_texto">Encuesta de Preferencias Tecnológicas.</h1>
-                <p class="sec_texto">Capturar múltiples selecciones, procesarlas y resumir resultados en el documento.</p>
-                <button class="btn" onclick="ir_seccion('seccion4')">Ir</button>
-            </section>
+            <li class="exercise-item" onclick="window.location.href='./pages/seccion2.html'">
+                <div class="exercise-title">Ejercicio 2 - Calculadora de Promedio</div>
+                <div class="exercise-description">
+                    Calcular promedio de notas y determinar si está aprobado o reprobado.
+                </div>
+            </li>
+
+            <li class="exercise-item" onclick="window.location.href='./pages/seccion3.html'">
+                <div class="exercise-title">Ejercicio 3 - Gestor de Tareas</div>
+                <div class="exercise-description">
+                    Lista de tareas con fechas, prioridades y filtros.
+                </div>
+            </li>
+
+            <li class="exercise-item" onclick="window.location.href='./pages/seccion4.html'">
+                <div class="exercise-title">Ejercicio 4 - Encuesta Tecnológica</div>
+                <div class="exercise-description">
+                    Encuesta sobre preferencias de programación con reportes.
+                </div>
+            </li>
+        </ul>
+
+        <div class="footer">
+            Selecciona un ejercicio para empezar
         </div>
     </div>
-    <script src="static/js/main.js"></script>
 </body>
 </html>
