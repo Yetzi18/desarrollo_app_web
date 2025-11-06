@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoLab</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
 
-    <!-- top navigation -->
     <div class="top"></div>
     <div class="nav-container">
         <h1>VideoLab</h1>
@@ -19,25 +20,21 @@
         <button class="btn">Login</button>
     </div>
 
-    <!-- main content -->
     <div class="flex-container">
 
-        <!-- left column -->
         <div class="col-l">
 
-            <!-- Video principal -->
-            <video class="main-video" poster="./resource/img/Untitled.png" controls>
-                <source src="./resource/video/GATITO CON ARROZ.mp4" type="video/mp4">
-            </video> 
+            <video class="main-video" id="mainVideo" src="resource/video/video1.mp4" controls autoplay muted
+                loop></video>
 
-            <!-- video info -->
             <div class="row">
                 <div class="start">
-                    <h1>GATITO CON ARROZ</h1>
-                    <h3>5,1M visualizaciones | 8 may 2021</h3>
+
+                    <h1 id="main-video-title">Flores amrillas</h1>
+                    <h3>2.5K Views | June 30, 2025</h3>
                     <div class="user">
-                        <img src="./resource/img/Icono.png" alt="user-circle" class="avatar-s">
-                        <span class="user-name">Un Poco De Todo</span>
+                        <img src="resource/img/icono.png" alt="user-circle" class="avatar-s">
+                        <span class="user-name">Natural</span>
                     </div>
                 </div>
                 <button class="btn">Subscribe</button>
@@ -45,47 +42,44 @@
 
         </div>
 
-        <!-- right column -->
         <div class="col-r">
+            
+            <h3 class="sub-header">Up next</h3>
 
-            <h3 class="sub-header">A continuación</h3>
+            <div class="video-small"
+                onclick="changeVideo('resource/video/video2.mp4', 'Galaxi')">
 
-            <div class="video-small">
-                <video class="vid-s" controls>
-                    <source src="ruta/al/video/huevo-coreano.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
-                <span class="video-title">HUEVO COREANO</span>
+                <video class="vid-s" src="resource/video/video2.mp4" muted loop onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this)"></video>
+                <span class="video-title">Galaxi</span>
             </div>
 
-            <div class="video-small">
-                <video class="vid-s" controls>
-                    <source src="ruta/al/video/python-strings.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
-                <span class="video-title">CURSO de Python (desde cero) visual studio code - Strings #3</span>
+            <div class="video-small"
+                onclick="changeVideo('resource/video/video3.mp4', 'Jardín')">
+                <video class="vid-s" src="resource/video/video3.mp4" muted loop onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this)"></video>
+                <span class="video-title">Jardín</span>
             </div>
 
-            <div class="video-small">
-                <video class="vid-s" controls>
-                    <source src="ruta/al/video/python-listas-tuplas.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
-                <span class="video-title">CURSO de Python (desde cero) visual studio code - Listas y Tuplas #4</span>
+            <div class="video-small"
+                onclick="changeVideo('resource/video/video4.mp4', 'Novia')">
+                <video class="vid-s" src="resource/video/video4.mp4" muted loop onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this)"></video>
+                <span class="video-title">Novia</span>
             </div>
 
-            <div class="video-small">
-                <video class="vid-s" controls>
-                    <source src="ruta/al/video/python-sets-diccionarios.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
-                <span class="video-title">CURSO de Python (desde cero) visual studio code - Sets y Diccionarios #5</span>
+            <div class="video-small"
+                onclick="changeVideo('resource/video/video5.mp4', 'Tetera')">
+                <video class="vid-s" src="resource/video/video5.mp4" muted loop onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this)"></video>
+                <span class="video-title">Tetera</span>
             </div>
-
+            
         </div>
 
     </div>
 
-    <script src="./static/js/script.js"></script>
+    <script src="static/js/main.js"></script>
 </body>
+
 </html>
